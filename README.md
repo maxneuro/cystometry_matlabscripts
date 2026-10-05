@@ -27,7 +27,7 @@ Placeholder text with step-by-step guide
 - **PLACEHOLDER BULLET LIST**
 
 ## Authors, Acknowledgements, & Contact Information <a name="authors"></a>
-The cystometry analysis scripts were developed and written by Max Odem; legacy script 1 was written by Jason Keller and Kara Marshall. All source code, documentation, and assets in this repository were created manually. No generative artificial intelligence tools were used to design, write, modify, or debug the code.
+The cystometry analysis scripts were developed and written by Max Odem; legacy script was written by Jason Keller, Kara Marshall, and Max Odem. All source code, documentation, and assets in this repository were created manually. No generative artificial intelligence tools were used to design, write, modify, or debug the code.
 
 This work was made possible through the following funding sources:
 - Howard Hughes Medical Institute Freeman Hrabowski Scholars Program (KLM)
