@@ -19,7 +19,7 @@ The custom cystometry analysis scripts 1-4 work in series to isolate pressure pe
 ## System Requirements & Installation<a name="install"></a>
 - The code was written and tested on a Windows 11 64-bit OS laptop running MATLAB v.2019B/2025B with 32 GB of RAM, AMD Ryzen 7 5800H 8 core CPU, and NVIDIA GeForce RTX 3070 GPU with 8 GB of VRAM
 - Required MATLAB Products/Packages: Signal Processing Toolbox
-- Follow standard MATLAB program installation instructions, install the Signal Processing Toolbox, and place the cystometry analysis scripts 1-4 in your root folder of choice
+- Follow standard MATLAB program installation instructions, install the Signal Processing Toolbox, and place the cystometry analysis scripts 1-4 in your path location of choice
 
 ## Usage Guide <a name="usage"></a>
 Before you begin, make sure to adjust any global variables to best fit your data parameters (e.g., SampleRate). These variables can be found within the first 30 lines of each script. Also, make sure to update the path variable and filetype filters in each script to match your folder destination of choice.
