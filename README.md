@@ -10,7 +10,7 @@ MATLAB scripts used to analyze cystometry time series data collected from anesth
 - [License](#license)
 
 ## Analysis Pipeline Workflow <a name="workflow"></a>
-Scripts 1-4 work in series to isolate pressure peak events during micturition cycles. Users have precise control over which micturition cycles and which peak events are analyzed depending on how the time series data are indexed. Please refer to the workflow diagram for a visual summary.
+The custom cystometry analysis scripts 1-4 work in series to isolate pressure peak events during micturition cycles recorded using the AcqKnowledge software (v4.4.2, BIOPAC). Users have precise control over which micturition cycles and which peak events are analyzed in depending on how the time series data are indexed via the MATLAB scripts. Please refer to the workflow diagram for a visual summary.
 
 <p align="center">
      <img width="1120" height="630" alt="Workflow_Diagram" src="Cystometry_Pipeline_Workflow.png" />
@@ -22,7 +22,36 @@ Scripts 1-4 work in series to isolate pressure peak events during micturition cy
 - Follow standard MATLAB program installation instructions, install the Signal Processing Toolbox, and place the cystometry analysis scripts 1-4 in your root folder of choice
 
 ## Usage Guide <a name="usage"></a>
-Placeholder text with step-by-step guide
+Before you begin, make sure to update the path variable and filetype filters in each script to match your folder destination of choice.
+- Script 1: Lines 8 and 20
+- Script 2: Lines 7 and 18
+- Script 3: Lines 7, 20, and 27
+- Script 4: Lines 7 and 33
+
+### Script 1
+1. Load the MATLAB-converted (.mat filetype) AcqkKnowledge data
+2. You will be presented with the pressure time series, but inverted, to facilitate isolating local micturition cycle minima
+   - Select the pressure threshold used to detect local micturition cycle minima (enter a negative pressure value)
+   - Select the minimal time interval between local micturition cycle minima (enter a time in seconds)
+   - Select the minimum pressure amplitude for local micturition cycle minima (enter a positive pressure value)
+3. You will be shown the results of MATLAB's findpeaks function
+   - Select 1 to accept (proceed to step 4)
+   - Select 0 to not accept (step 2 will repeat)
+4. You will be presented with the pressure time series to facilitate isolating peak pressure events
+   - Select the pressure threshold used to detect peak pressure events (enter a positive pressure value)
+   - Select the minimal time interval between peak pressure events (enter a time in seconds)
+   - Select the minimum pressure amplitude for peak pressure events (enter a positive pressure value)
+5. You will be shown the results of MATLAB's findpeaks function
+   - Select 1 to accept (proceed to step 6)
+   - Select 0 to not accept (step 4 will repeat)
+6. Script will run to completion
+
+### Script 2
+
+### Script 3
+
+### Script 4
+
 
 ## Known Issues & Bugs <a name="issues-bugs"></a>
 - **PLACEHOLDER BULLET LIST**
