@@ -2,17 +2,19 @@
 MATLAB scripts used to analyze cystometry time series data collected from anesthetized mice
 
 ## Table of Contents
-- [Analysis Features](#features)
+- [Analysis Pipeline Workflow](#workflow)
 - [System Requirements & Installation](#install)
 - [Usage Guide](#usage)
 - [Known Issues & Bugs](#issues-bugs)
 - [Authors, Acknowledgements, & Contact Information](#authors)
 - [License](#license)
 
-## Analysis Features <a name="features"></a>
-Placeholder text describing methodology
-- **PLACEHOLDER BULLET LIST**
-- **PLACEHOLDER BULLET LIST**
+## Analysis Pipeline Workflow <a name="workflow"></a>
+Scripts 1-4 work in series to isolate pressure peak events during micturition cycles. Users have precise control over which micturition cycles and which peak events are analyzed depending on how the time series data are indexed. Please refer to the workflow diagram for a visual summary.
+
+<p align="center">
+     <img width="1120" height="630" alt="Workflow_Diagram" src="Cystometry_Pipeline_Workflow.png" />
+</p>
 
 ## System Requirements & Installation<a name="install"></a>
 - The code was written and tested on a Windows 11 64-bit OS laptop running MATLAB v.2019B/2025B with 32 GB of RAM, AMD Ryzen 7 5800H 8 core CPU, and NVIDIA GeForce RTX 3070 GPU with 8 GB of VRAM
