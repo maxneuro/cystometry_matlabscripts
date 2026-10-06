@@ -27,24 +27,27 @@ Before you begin, make sure to update the path variable and filetype filters in 
 - Script 2: Lines 7 and 18
 - Script 3: Lines 7, 20, and 27
 - Script 4: Lines 7 and 33
+Additionally, make sure to adjust any global variables to fit your data parameters (e.g., SampleRate). These variables can be found within the first 30 lines.
 
 ### Script 1
-1. Load the MATLAB-converted (.mat filetype) AcqkKnowledge data
-2. You will be presented with the pressure time series, but inverted, to facilitate isolating local micturition cycle minima
+1. Load the MATLAB-converted AcqkKnowledge data (.mat filetype)
+   - Assumes pressure time series data are stored in column 1 (see line 37)
+   - Assumes corresponding electromyography time series data are stored in column 2 (see line 38)
+3. You will be presented with the pressure time series, but inverted, to facilitate isolating local micturition cycle minima
    - Select the pressure threshold used to detect local micturition cycle minima (enter a negative pressure value)
    - Select the minimal time interval between local micturition cycle minima (enter a time in seconds)
    - Select the minimum pressure amplitude for local micturition cycle minima (enter a positive pressure value)
-3. You will be shown the results of MATLAB's findpeaks function
+4. You will be shown the results of MATLAB's findpeaks function
    - Select 1 to accept (proceed to step 4)
    - Select 0 to not accept (step 2 will repeat)
-4. You will be presented with the pressure time series to facilitate isolating peak pressure events
+5. You will be presented with the pressure time series to facilitate isolating peak pressure events
    - Select the pressure threshold used to detect peak pressure events (enter a positive pressure value)
    - Select the minimal time interval between peak pressure events (enter a time in seconds)
    - Select the minimum pressure amplitude for peak pressure events (enter a positive pressure value)
-5. You will be shown the results of MATLAB's findpeaks function
+6. You will be shown the results of MATLAB's findpeaks function
    - Select 1 to accept (proceed to step 6)
    - Select 0 to not accept (step 4 will repeat)
-6. Script will run to completion
+7. Script will run to completion
 
 ### Script 2
 
