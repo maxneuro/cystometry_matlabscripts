@@ -32,23 +32,51 @@ Before you begin, make sure to adjust any global variables to best fit your data
 1. Load the MATLAB-converted AcqkKnowledge data (.mat filetype)
    - Assumes pressure time series data are stored in column 1 (see line 37)
    - Assumes corresponding electromyography time series data are stored in column 2 (see line 38)
-3. You will be presented with the pressure time series, but inverted, to facilitate isolating local micturition cycle minima
-   - Select the pressure threshold used to detect local micturition cycle minima (enter a negative pressure value)
-   - Select the minimal time interval between local micturition cycle minima (enter a time in seconds)
-   - Select the minimum pressure amplitude for local micturition cycle minima (enter a positive pressure value)
-4. You will be shown the results of MATLAB's findpeaks function
-   - Select 1 to accept (proceed to step 4)
-   - Select 0 to not accept (step 2 will repeat)
-5. You will be presented with the pressure time series to facilitate isolating peak pressure events
-   - Select the pressure threshold used to detect peak pressure events (enter a positive pressure value)
-   - Select the minimal time interval between peak pressure events (enter a time in seconds)
-   - Select the minimum pressure amplitude for peak pressure events (enter a positive pressure value)
-6. You will be shown the results of MATLAB's findpeaks function
-   - Select 1 to accept (proceed to step 6)
-   - Select 0 to not accept (step 4 will repeat)
-7. Script will run to completion
+2. You will be presented with the pressure time series, but inverted, to facilitate isolating local micturition cycle minima
+   - Enter the pressure threshold used to detect local micturition cycle minima (enter a negative pressure value)
+   - Enter the minimal time interval between local micturition cycle minima (enter a time in seconds)
+   - Enter the minimum pressure amplitude for local micturition cycle minima (enter a positive pressure value)
+3. You will be shown the results of MATLAB's findpeaks function
+   - Enter 1 to accept (proceed to step 4)
+   - Enter 0 to not accept (step 2 will repeat)
+4. You will be presented with the pressure time series to facilitate isolating peak pressure events
+   - Enter the pressure threshold used to detect peak pressure events (enter a positive pressure value)
+   - Enter the minimal time interval between peak pressure events (enter a time in seconds)
+   - Enter the minimum pressure amplitude for peak pressure events (enter a positive pressure value)
+5. You will be shown the results of MATLAB's findpeaks function
+   - Enter 1 to accept (proceed to step 6)
+   - Enter 0 to not accept (step 4 will repeat)
+6. Script will run to completion
 
 ### Script 2
+1. Load the MATLAB-converted AcqKnowledge data (.mat filetype)
+   - Assumes pressure time series data are stored in column 1 (see line 35)
+   - Corresponding electromyography time series data are not used
+2. Load the "unitary" event files that correspond to the micturition cycles to be analyzed (.mat filetype)
+   - Select 1 or more files that end with "_unitary_NUMBER.mat" that correspond with the time series data selected in step 1
+   - These files were generated via Script 1
+3. You will be presented with the pressure time series, but inverted, to facilitate isolating local micturition cycle minima
+   - Enter the pressure threshold used to detect local micturition cycle minima (enter a negative pressure value)
+   - Enter the minimal time interval between local micturition cycle minima (enter a time in seconds)
+   - Enter the minimum pressure amplitude for local micturition cycle minima (enter a positive pressure value)
+4. You will be shown the results of MATLAB's findpeaks function
+   - Enter 1 to accept (proceed to step 5)
+   - Enter 0 to not accept (step 3 will repeat)
+5. You will be presented with the pressure time series to facilitate isolating non-voiding AND voiding pressure events
+   - Enter the pressure threshold used to detect pressure events (enter a positive pressure value)
+   - Enter the minimal time interval between pressure events (enter a time in seconds)
+   - Enter the minimum pressure amplitude for pressure events (enter a positive pressure value)
+6. You will be shown the results of MATLAB's findpeaks function
+   - Enter 1 to accept (proceed to step 7)
+   - Enter 0 to not accept (step 5 will repeat)
+7. You will be presented with the pressure time series, but inverted, to facilitate isolating local minima that separate non-voiding and voiding pressure events
+   - Enter the pressure threshold used to detect local minima (enter a negative pressure value)
+   - Enter the minimal time interval between local minima (enter a time in seconds)
+   - Enter the minimum pressure amplitude for local minima (enter a positive pressure value)
+8. You will be shown the results of MATLAB's findpeaks function
+   - Enter 1 to accept (proceed to step 9)
+   - Enter 0 to not accept (step 8 will repeat)
+9. Script will run to completion
 
 ### Script 3
 
