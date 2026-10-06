@@ -22,7 +22,7 @@ The custom cystometry analysis scripts 1-4 work in series to isolate pressure pe
 - Follow standard MATLAB program installation instructions, install the Signal Processing Toolbox, and place the cystometry analysis scripts 1-4 in your path location of choice
 
 ## Usage Guide <a name="usage"></a>
-Before you begin, make sure to adjust any global variables to best fit your data parameters (e.g., SampleRate). These variables can be found within the first 30 lines of each script. Also, make sure to update the path variable and filetype filters in each script to match your folder destination of choice.
+Before you begin, make sure to adjust any global variables to best fit your data parameters (e.g., SampleRate). These variables can be found within the first 30 lines of each script. Also, make sure to update the path variable and filetype filters in each script to match your folder location of choice.
 - Script 1: Lines 8 and 20
 - Script 2: Lines 7 and 18
 - Script 3: Lines 7, 20, and 27
